@@ -1,0 +1,17 @@
+C:\Users\Dell\source\repos\MyStore\MyStore.Data\obj\Debug\net9.0\MyStore.Data.csproj.AssemblyReference.cache
+C:\Users\Dell\source\repos\MyStore\MyStore.Data\obj\Debug\net9.0\MyStore.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Dell\source\repos\MyStore\MyStore.Data\obj\Debug\net9.0\MyStore.Data.AssemblyInfoInputs.cache
+C:\Users\Dell\source\repos\MyStore\MyStore.Data\obj\Debug\net9.0\MyStore.Data.AssemblyInfo.cs
+C:\Users\Dell\source\repos\MyStore\MyStore.Data\obj\Debug\net9.0\MyStore.Data.csproj.CoreCompileInputs.cache
+C:\Users\Dell\source\repos\MyStore\MyStore.Data\bin\Debug\net9.0\MyStore.Data.deps.json
+C:\Users\Dell\source\repos\MyStore\MyStore.Data\bin\Debug\net9.0\MyStore.Data.runtimeconfig.json
+C:\Users\Dell\source\repos\MyStore\MyStore.Data\bin\Debug\net9.0\MyStore.Data.dll
+C:\Users\Dell\source\repos\MyStore\MyStore.Data\bin\Debug\net9.0\MyStore.Data.pdb
+C:\Users\Dell\source\repos\MyStore\MyStore.Data\bin\Debug\net9.0\MyStore.Model.dll
+C:\Users\Dell\source\repos\MyStore\MyStore.Data\bin\Debug\net9.0\MyStore.Model.pdb
+C:\Users\Dell\source\repos\MyStore\MyStore.Data\obj\Debug\net9.0\MyStore..2005BE70.Up2Date
+C:\Users\Dell\source\repos\MyStore\MyStore.Data\obj\Debug\net9.0\MyStore.Data.dll
+C:\Users\Dell\source\repos\MyStore\MyStore.Data\obj\Debug\net9.0\refint\MyStore.Data.dll
+C:\Users\Dell\source\repos\MyStore\MyStore.Data\obj\Debug\net9.0\MyStore.Data.pdb
+C:\Users\Dell\source\repos\MyStore\MyStore.Data\obj\Debug\net9.0\MyStore.Data.genruntimeconfig.cache
+C:\Users\Dell\source\repos\MyStore\MyStore.Data\obj\Debug\net9.0\ref\MyStore.Data.dll

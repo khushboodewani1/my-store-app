@@ -1,0 +1,12 @@
+C:\Users\Dell\source\repos\MyStore\MyStore.Model\bin\Debug\net9.0\MyStore.Model.deps.json
+C:\Users\Dell\source\repos\MyStore\MyStore.Model\bin\Debug\net9.0\MyStore.Model.dll
+C:\Users\Dell\source\repos\MyStore\MyStore.Model\bin\Debug\net9.0\MyStore.Model.pdb
+C:\Users\Dell\source\repos\MyStore\MyStore.Model\obj\Debug\net9.0\MyStore.Model.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Dell\source\repos\MyStore\MyStore.Model\obj\Debug\net9.0\MyStore.Model.AssemblyInfoInputs.cache
+C:\Users\Dell\source\repos\MyStore\MyStore.Model\obj\Debug\net9.0\MyStore.Model.AssemblyInfo.cs
+C:\Users\Dell\source\repos\MyStore\MyStore.Model\obj\Debug\net9.0\MyStore.Model.csproj.CoreCompileInputs.cache
+C:\Users\Dell\source\repos\MyStore\MyStore.Model\obj\Debug\net9.0\MyStore.Model.dll
+C:\Users\Dell\source\repos\MyStore\MyStore.Model\obj\Debug\net9.0\refint\MyStore.Model.dll
+C:\Users\Dell\source\repos\MyStore\MyStore.Model\obj\Debug\net9.0\MyStore.Model.pdb
+C:\Users\Dell\source\repos\MyStore\MyStore.Model\obj\Debug\net9.0\ref\MyStore.Model.dll
+C:\Users\Dell\source\repos\MyStore\MyStore.Model\obj\Debug\net9.0\MyStore.Model.csproj.AssemblyReference.cache

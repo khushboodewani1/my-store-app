@@ -1,0 +1,50 @@
+﻿@model MyStore.Models.WeatherResponse
+@{
+    ViewData["Title"] = "Weather";
+}
+
+<div class="container mt-5">
+    <h2 class="text-center text-primary mb-4">Check Weather by City</h2>
+
+    <!-- Show errors here if city not found -->
+    <div asp-validation-summary="ModelOnly" class="alert alert-danger"></div>
+
+    <form asp-action="Index" method="post" class="d-flex justify-content-center mb-4">
+        <div class="input-group" style="max-width: 450px;">
+            <input type="text"
+                   name="city"
+                   value="@ViewBag.City"
+                   class="form-control"
+                   placeholder="Enter city name"
+                   required />
+            <div class="input-group-append">
+                <button type="submit" class="btn btn-success">Get Weather</button>
+            </div>
+        </div>
+    </form>
+
+    @if (Model != null)
+    {
+        <div class="card mx-auto" style="max-width: 600px;">
+            <div class="card-body">
+                <h3 class="card-title text-center mb-3">Weather in @Model.Name</h3>
+                <p><strong>Temperature:</strong> @Model.Main.Temp °C</p>
+                <p><strong>Feels Like:</strong> @Model.Main.Feels_like °C</p>
+                <p><strong>Condition:</strong> @Model.Weather.FirstOrDefault()?.Description</p>
+
+                <form asp-action="Refresh" method="post">
+                    <input type="hidden" name="city" value="@ViewBag.City" />
+                    <button type="submit" class="btn btn-primary btn-block mt-3">
+                        Refresh Weather
+                    </button>
+                </form>
+            </div>
+        </div>
+    }
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

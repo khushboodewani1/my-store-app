@@ -1,0 +1,41 @@
+﻿@using MyStore.Models.ViewModels
+@model LoginViewModel
+
+<div class="container d-flex justify-content-center align-items-center" style="min-height: 100vh;">
+    <div class="card shadow-sm p-4" style="width: 100%; max-width: 400px;">
+        <h3 class="text-center mb-4 text-primary font-weight-bold">Welcome</h3>
+
+        <form asp-action="Login" method="post" novalidate>
+
+            <div asp-validation-summary="ModelOnly" class="alert alert-danger" role="alert"></div>
+            <div class="form-group mb-3">
+                <label asp-for="Email" class="form-label font-weight-semibold">Email</label>
+                <input asp-for="Email" class="form-control" placeholder="Enter your email" />
+                <span asp-validation-for="Email" class="text-danger small"></span>
+            </div>
+
+            <div class="form-group mb-4">
+                <label asp-for="Password" class="form-label font-weight-semibold">Password</label>
+                <input asp-for="Password" type="password" class="form-control" placeholder="Enter your password" />
+                <span asp-validation-for="Password" class="text-danger small"></span>
+            </div>
+
+            <button type="submit" class="btn btn-primary w-100">Login</button>
+        </form>
+
+        <div class="text-center mt-3">
+            <small>
+                Don't have an account?
+                <a asp-action="Register" asp-controller="Account" class="text-decoration-none text-primary font-weight-bold">
+                    Register here
+                </a>
+            </small>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

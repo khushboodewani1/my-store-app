@@ -1,0 +1,29 @@
+﻿@model MyStore.Model.CategoryMaster
+@{
+    ViewData["Title"] = "Create Category";
+}
+
+<div class="container d-flex justify-content-center align-items-center" style="min-height: 100vh;">
+    <div class="card shadow-sm p-4" style="width: 100%; max-width: 500px;">
+        <h3 class="text-center text-primary fw-bold mb-4">Create Category</h3>
+
+        <form asp-action="Create" novalidate>
+            <div class="mb-3">
+                <label asp-for="Name" class="form-label fw-semibold">Category Name</label>
+                <input asp-for="Name" class="form-control" placeholder="Enter category name" />
+                <span asp-validation-for="Name" class="text-danger small"></span>
+            </div>
+
+            <div class="d-flex justify-content-between">
+                <button type="submit" class="btn btn-success w-48">Save</button>
+                <a asp-action="Index" class="btn btn-secondary w-48 text-center">Cancel</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

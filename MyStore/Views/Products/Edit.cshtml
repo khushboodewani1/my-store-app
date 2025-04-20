@@ -1,0 +1,63 @@
+﻿@model MyStore.Model.Product
+@{
+    ViewData["Title"] = "Edit Product";
+}
+
+<div class="container mt-5">
+    <h2 class="text-center text-primary mb-4">Edit Product</h2>
+
+    <div class="card shadow-sm p-4">
+        <form asp-action="Edit">
+            <input type="hidden" asp-for="Id" />
+
+          
+            <div class="form-group">
+                <label asp-for="Name" class="font-weight-bold">Product Name</label>
+                <input asp-for="Name" class="form-control" placeholder="Enter product name" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+
+    
+            <div class="form-group">
+                <label asp-for="Description" class="font-weight-bold">Description</label>
+                <textarea asp-for="Description" class="form-control" placeholder="Enter product description"></textarea>
+                <span asp-validation-for="Description" class="text-danger"></span>
+            </div>
+
+           
+            <div class="form-group">
+                <label asp-for="Price.Amount" class="font-weight-bold">Price</label>
+                <input asp-for="Price.Amount" class="form-control" placeholder="Enter price amount" />
+                <span asp-validation-for="Price.Amount" class="text-danger"></span>
+            </div>
+
+           
+            <div class="form-group">
+                <label asp-for="Price.Currency" class="font-weight-bold">Currency</label>
+                <input asp-for="Price.Currency" class="form-control" placeholder="Enter currency (e.g., USD)" />
+                <span asp-validation-for="Price.Currency" class="text-danger"></span>
+            </div>
+
+          
+            <div class="form-group">
+                <label asp-for="CategoryMasterId" class="font-weight-bold">Category</label>
+                <select asp-for="CategoryMasterId" asp-items="@(ViewBag.CategoryMasterId)" class="form-control">
+                    <option value="">Select a category</option>
+                </select>
+                <span asp-validation-for="CategoryMasterId" class="text-danger"></span>
+            </div>
+
+          
+            <div class="form-group d-flex justify-content-between">
+                <button type="submit" class="btn btn-primary btn-lg">Update</button>
+                <a asp-action="Index" class="btn btn-secondary btn-lg">Cancel</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
